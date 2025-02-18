@@ -7,6 +7,7 @@
 body {
   background-color: #e2f4ec;
   font-family: "Caveat Brush", serif;
+  color: #0c1c3b;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,6 +26,14 @@ body {
   text-align: center;
   max-width: 100%;
   width: 800px;
+  clip-path: polygon(
+    5% 0%, 95% 0%, 100% 10%, 95% 20%, 
+    100% 30%, 90% 40%, 100% 50%, 95% 60%, 
+    100% 70%, 95% 80%, 100% 90%, 95% 100%, 
+    5% 100%, 0% 90%, 5% 80%, 0% 70%, 
+    10% 60%, 0% 50%, 5% 40%, 0% 30%, 
+    10% 20%, 0% 10%
+  );
 }
 
 h3 {
@@ -42,10 +51,11 @@ h3 {
 }
 
 .btn {
-  background-color: #9f68e0;
+  background-color: #0c1c3b;
+  font-family: "Caveat Brush", serif;
   color: #fff;
   border: 0;
-  border-radius: 10px;
+  border-radius: 50px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
   padding: 14px 40px;
   font-size: 16px;
