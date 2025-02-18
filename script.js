@@ -13,4 +13,8 @@ async function generateJoke() {
    jokeEl.textContent = data.joke;
 }
 
-gener
+generateJoke();
+
+
+// listeners
+jokeBtn.addEventListener('click', generateJoke);
